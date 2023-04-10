@@ -67,6 +67,7 @@ To run the project, execute the following command in terminal:
 ```
     create main.rb file
     instanciate the classes
+    run the file
 ```
 
 <!-- AUTHORS -->

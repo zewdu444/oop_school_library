@@ -38,7 +38,8 @@ which adheres to the principles of Object-Oriented Programming (OOP) and is impl
 
 - Had Person , students, and teachers classes.
 - Inheritance and polymorphism were used.
-- follwed best practices of OOP.
+- Decorator design pattern was used.
+- Trimmer and Capitalize decorator were implemented.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,9 +66,7 @@ Clone this repository to your local machine:
 To run the project, execute the following command in terminal:
 
 ```
-    create main.rb file
-    instanciate the classes
-    run the file
+  ruby main.rb
 ```
 
 <!-- AUTHORS -->
@@ -87,7 +86,7 @@ To run the project, execute the following command in terminal:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- I will improve by using "Decorator" design pattern
+- I will add set up associations
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

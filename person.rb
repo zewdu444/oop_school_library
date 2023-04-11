@@ -2,7 +2,7 @@
 require_relative 'nameable'
 class Person < Nameable
   attr_accessor :name, :age
-  attr_reader :id ,:nameable
+  attr_reader :id
 
   def initialize(age, name = 'Unknown', parent_permission: true)
     @id = id
@@ -19,7 +19,7 @@ class Person < Nameable
     of_age? || @parent_permission
   end
  def correct_name
-     nameable
+     @name
  end
   private :of_age?
 end

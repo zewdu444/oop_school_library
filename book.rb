@@ -7,8 +7,9 @@ class Book
     @author = author
     @rentals = []
   end
+
   def add_rental(person, date = Date.today, book = self)
     Rental.new(date, book, person)
-    @rentals<<self unless @rentals.include?(self)
+    @rentals << self unless @rentals.include?(self)
   end
 end

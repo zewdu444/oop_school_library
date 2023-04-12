@@ -14,7 +14,7 @@ student_one = Student.new(comp_one, 18, 'Minilik', parent_permission: true)
 # create a student two
 student_two = Student.new(comp_one, 18, 'zewdu', parent_permission: true)
 # create a teacher
-teacher_one = Teacher.new(comp_one, 30, 'Mulu')
+teacher_one = Teacher.new('Math', 30, 'Tewodros', parent_permission: true)
 
 # create a book
 book_one = Book.new('The Alchemist', 'Paulo Coelho')

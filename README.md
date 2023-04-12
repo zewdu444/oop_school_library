@@ -40,6 +40,8 @@ which adheres to the principles of Object-Oriented Programming (OOP) and is impl
 - Inheritance and polymorphism were used.
 - Decorator design pattern was used.
 - Trimmer and Capitalize decorator were implemented.
+- books , rentals, and classroom classes were implemented.
+- Many to many and one to many associations were implemented.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,7 +88,7 @@ To run the project, execute the following command in terminal:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- I will add set up associations
+- I will add basic UI.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

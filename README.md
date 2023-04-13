@@ -3,6 +3,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [:camera: screenshot](#screenshot)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -25,6 +26,9 @@
 > An app utilized for managing books and keeping track of borrowing activity,
 which adheres to the principles of Object-Oriented Programming (OOP) and is implemented using Ruby.
 
+## :camera: Screenshot <a name="Screen-shot"></a>
+
+![screenshot](./asset/output.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,6 +46,8 @@ which adheres to the principles of Object-Oriented Programming (OOP) and is impl
 - Trimmer and Capitalize decorator were implemented.
 - books , rentals, and classroom classes were implemented.
 - Many to many and one to many associations were implemented.
+- Basic UI was implemented.
+- App is executable from the command line.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,10 +71,9 @@ Clone this repository to your local machine:
 
 ### Usage
 
-To run the project, execute the following command in terminal:
-
+To run the project redirecting to the root directory of the project and
 ```
-  ruby main.rb
+  open main.rb
 ```
 
 <!-- AUTHORS -->
@@ -88,7 +93,7 @@ To run the project, execute the following command in terminal:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- I will add basic UI.
+- I will refactor the code to make it more readable and maintainable.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

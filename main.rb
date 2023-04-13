@@ -1,34 +1,34 @@
-require_relative 'person'
-require_relative 'capitalize_decorator'
-require_relative 'trimmer_decorator'
-require_relative 'book'
-require_relative 'rental'
-require_relative 'teacher'
-require_relative 'student'
-require_relative 'classroom'
-
-# create a classsroom
-comp_one = Classroom.new('Computer Science')
-#  create a student one
-student_one = Student.new(comp_one, 18, 'Minilik', parent_permission: true)
-# create a student two
-student_two = Student.new(comp_one, 18, 'zewdu', parent_permission: true)
-# create a teacher
-teacher_one = Teacher.new('Math', 30, 'Tewodros', parent_permission: true)
-
-# create a book
-book_one = Book.new('The Alchemist', 'Paulo Coelho')
-# create a book
-book_two = Book.new('Atomic Habit', 'James Clear')
-# create a rental
-rental_one = Rental.new('4-12-2023', book_one, student_one)
-# create a rental
-rental_two = Rental.new('4-11-2023', book_two, student_two)
-# create a rental
-rental_three = Rental.new('4-11-2023', book_one, teacher_one)
-
-p 'library books rental details are as follows'
-p '------------------------------------------'
-p "1. rental name #{rental_one.person.name}  book #{rental_one.book.title} date of rental #{rental_one.date}"
-p "2. rental name #{rental_two.person.name}   book #{rental_two.book.title} date of rental #{rental_two.date}"
-p "3. rental name #{rental_three.person.name} book #{rental_three.book.title} date of rental #{rental_three.date}"
+require_relative 'app'
+def main
+  puts 'Welcome to School Library OOP App!'
+  puts '----------------------------------'
+  app = App.new
+  loop do
+    puts 'Please choose an option by entering a number:'
+    puts '1 - List all books'
+    puts '2 - List all people'
+    puts '3 - Create a person'
+    puts '4 - Create a book'
+    puts '5 - Create a rental'
+    puts '6 - List all rentals for a given person id'
+    puts '7 - Exit'
+    option = gets.chomp
+    case option
+    when '1'
+      app.list_books
+    when '2'
+      app.list_people
+    when '3'
+      app.create_person
+    when '4'
+      app.create_book
+    when '5'
+      app.create_rental
+    when '6'
+      app.list_rentals_for_person_id
+    end
+    break if option == '7'
+  end
+  puts 'Thank you for using this app!'
+end
+main
